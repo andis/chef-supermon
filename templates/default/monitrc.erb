@@ -1,0 +1,9 @@
+set daemon 10
+    with start delay 10
+
+set logfile syslog facility log_daemon
+
+set mailserver <%= @mailservers %>
+set alert root@localhost
+
+include /etc/monit/conf.d/*

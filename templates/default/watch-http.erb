@@ -1,0 +1,3 @@
+check host http_<%= @uri.host %> with address <%= @uri.host %>
+  if failed url <%= @uri %>
+  then alert
